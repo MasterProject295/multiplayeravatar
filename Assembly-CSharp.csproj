@@ -46,11 +46,100 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\CameraManager.cs" />
+     <Compile Include="Assets\IKOrionLeapHandController.cs" />
+     <Compile Include="Assets\LeapAvatarHands\Scripts\IKActioner.cs" />
+     <Compile Include="Assets\LeapAvatarHands\Scripts\IKLeapHandController.cs" />
+     <Compile Include="Assets\LeapAvatarHands\Scripts\IKOrionActioner.cs" />
+     <Compile Include="Assets\LeapAvatarHands\Scripts\IKOrionLeapHandController.cs" />
+     <Compile Include="Assets\LeapAvatarHands\Scripts\MatchRotation.cs" />
+     <Compile Include="Assets\LeapAvatarHands\Scripts\NetworkedIKOrionLeapHandController.cs" />
+     <Compile Include="Assets\LeapAvatarHands\Scripts\RigidIKFinger.cs" />
+     <Compile Include="Assets\LeapAvatarHands\Scripts\RigidIKHand.cs" />
+     <Compile Include="Assets\LeapAvatarHands\Scripts\Teleporter.cs" />
+     <Compile Include="Assets\LeapMotion\Scripts\Algorithms\SlidingMax.cs" />
+     <Compile Include="Assets\LeapMotion\Scripts\Algorithms\SmoothedFloat.cs" />
+     <Compile Include="Assets\LeapMotion\Scripts\Algorithms\SmoothedQuaternion.cs" />
+     <Compile Include="Assets\LeapMotion\Scripts\Algorithms\SmoothedVector3.cs" />
+     <Compile Include="Assets\LeapMotion\Scripts\Attributes\AutoFindAttribute.cs" />
+     <Compile Include="Assets\LeapMotion\Scripts\Attributes\CombinablePropertyAttribute.cs" />
+     <Compile Include="Assets\LeapMotion\Scripts\Attributes\Disable.cs" />
+     <Compile Include="Assets\LeapMotion\Scripts\Attributes\DisableIf.cs" />
+     <Compile Include="Assets\LeapMotion\Scripts\Attributes\EnumFlags.cs" />
+     <Compile Include="Assets\LeapMotion\Scripts\Attributes\Incrementable.cs" />
+     <Compile Include="Assets\LeapMotion\Scripts\Attributes\MaxValue.cs" />
+     <Compile Include="Assets\LeapMotion\Scripts\Attributes\MinMax.cs" />
+     <Compile Include="Assets\LeapMotion\Scripts\Attributes\MinValue.cs" />
+     <Compile Include="Assets\LeapMotion\Scripts\Attributes\UnitsAttribute.cs" />
+     <Compile Include="Assets\LeapMotion\Scripts\DataStructures\MinHeap.cs" />
+     <Compile Include="Assets\LeapMotion\Scripts\DataStructures\ProduceConsumeBuffer.cs" />
+     <Compile Include="Assets\LeapMotion\Scripts\DataStructures\RingBuffer.cs" />
+     <Compile Include="Assets\LeapMotion\Scripts\DataStructures\SerializableDictionary.cs" />
+     <Compile Include="Assets\LeapMotion\Scripts\DetectionUtilities\AbstractHoldDetector.cs" />
+     <Compile Include="Assets\LeapMotion\Scripts\DetectionUtilities\Detector.cs" />
+     <Compile Include="Assets\LeapMotion\Scripts\DetectionUtilities\DetectorLogicGate.cs" />
+     <Compile Include="Assets\LeapMotion\Scripts\DetectionUtilities\ExtendedFingerDetector.cs" />
+     <Compile Include="Assets\LeapMotion\Scripts\DetectionUtilities\FingerDirectionDetector.cs" />
+     <Compile Include="Assets\LeapMotion\Scripts\DetectionUtilities\PalmDirectionDetector.cs" />
+     <Compile Include="Assets\LeapMotion\Scripts\DetectionUtilities\PinchDetector.cs" />
+     <Compile Include="Assets\LeapMotion\Scripts\DetectionUtilities\ProximityDetector.cs" />
+     <Compile Include="Assets\LeapMotion\Scripts\HandFactory.cs" />
+     <Compile Include="Assets\LeapMotion\Scripts\HandPool.cs" />
+     <Compile Include="Assets\LeapMotion\Scripts\HandProxy.cs" />
+     <Compile Include="Assets\LeapMotion\Scripts\HandRepresentation.cs" />
+     <Compile Include="Assets\LeapMotion\Scripts\Hands\CapsuleHand.cs" />
+     <Compile Include="Assets\LeapMotion\Scripts\Hands\DebugHand.cs" />
+     <Compile Include="Assets\LeapMotion\Scripts\Hands\FingerModel.cs" />
+     <Compile Include="Assets\LeapMotion\Scripts\Hands\HandDrop.cs" />
+     <Compile Include="Assets\LeapMotion\Scripts\Hands\HandEnableDisable.cs" />
+     <Compile Include="Assets\LeapMotion\Scripts\Hands\HandFader.cs" />
+     <Compile Include="Assets\LeapMotion\Scripts\Hands\HandModel.cs" />
+     <Compile Include="Assets\LeapMotion\Scripts\Hands\HandTransitionBehavior.cs" />
+     <Compile Include="Assets\LeapMotion\Scripts\Hands\IHandModel.cs" />
+     <Compile Include="Assets\LeapMotion\Scripts\Hands\RigidFinger.cs" />
+     <Compile Include="Assets\LeapMotion\Scripts\Hands\RigidHand.cs" />
+     <Compile Include="Assets\LeapMotion\Scripts\Hands\SkeletalFinger.cs" />
+     <Compile Include="Assets\LeapMotion\Scripts\Hands\SkeletalHand.cs" />
+     <Compile Include="Assets\LeapMotion\Scripts\Hands\TestHandFactory.cs" />
+     <Compile Include="Assets\LeapMotion\Scripts\LeapDeviceInfo.cs" />
+     <Compile Include="Assets\LeapMotion\Scripts\LeapHandController.cs" />
+     <Compile Include="Assets\LeapMotion\Scripts\LeapImageRetriever.cs" />
+     <Compile Include="Assets\LeapMotion\Scripts\LeapProvider.cs" />
+     <Compile Include="Assets\LeapMotion\Scripts\LeapServiceProvider.cs" />
+     <Compile Include="Assets\LeapMotion\Scripts\Utils\AssertHelper.cs" />
+     <Compile Include="Assets\LeapMotion\Scripts\Utils\DisconnectionNotice.cs" />
+     <Compile Include="Assets\LeapMotion\Scripts\Utils\EnableDepthBuffer.cs" />
+     <Compile Include="Assets\LeapMotion\Scripts\Utils\ExecutionOrder.cs" />
+     <Compile Include="Assets\LeapMotion\Scripts\Utils\FitHeightToScreen.cs" />
+     <Compile Include="Assets\LeapMotion\Scripts\Utils\FrameRateControls.cs" />
+     <Compile Include="Assets\LeapMotion\Scripts\Utils\KeyEnableBehaviors.cs" />
+     <Compile Include="Assets\LeapMotion\Scripts\Utils\KeyEnableGameObjects.cs" />
+     <Compile Include="Assets\LeapMotion\Scripts\Utils\LeapUnityExtensions.cs" />
+     <Compile Include="Assets\LeapMotion\Scripts\Utils\RuntimeColliderGizmos.cs" />
+     <Compile Include="Assets\LeapMotion\Scripts\Utils\RuntimeGizmoManager.cs" />
+     <Compile Include="Assets\LeapMotion\Scripts\Utils\RuntimeGizmoToggle.cs" />
+     <Compile Include="Assets\LeapMotion\Scripts\Utils\SceneSettings.cs" />
+     <Compile Include="Assets\LeapMotion\Scripts\Utils\StretchToScreen.cs" />
+     <Compile Include="Assets\LeapMotion\Scripts\Utils\Utils.cs" />
+     <Compile Include="Assets\LeapMotion\Scripts\VR\EyeType.cs" />
+     <Compile Include="Assets\LeapMotion\Scripts\VR\LeapVRCameraControl.cs" />
+     <Compile Include="Assets\LeapMotion\Scripts\VR\LeapVRTemporalWarping.cs" />
+     <Compile Include="Assets\LeapMotion\Scripts\VR\TemporalWarpingStatus.cs" />
+     <Compile Include="Assets\LeapMotion\Scripts\VR\VRHeightOffset.cs" />
+     <Compile Include="Assets\LeapMotionModules\Hands\Examples\Scripts\CenterTransformOnCam.cs" />
+     <Compile Include="Assets\LeapMotionModules\Hands\Examples\Scripts\CycleHandPairs.cs" />
+     <Compile Include="Assets\LeapMotionModules\Hands\Scripts\LeapHandsAutoRig.cs" />
+     <Compile Include="Assets\LeapMotionModules\Hands\Scripts\MinimalHand.cs" />
+     <Compile Include="Assets\LeapMotionModules\Hands\Scripts\PolyFinger.cs" />
+     <Compile Include="Assets\LeapMotionModules\Hands\Scripts\PolyHand.cs" />
+     <Compile Include="Assets\LeapMotionModules\Hands\Scripts\RiggedFinger.cs" />
+     <Compile Include="Assets\LeapMotionModules\Hands\Scripts\RiggedHand.cs" />
      <Compile Include="Assets\Simple Multiplayer\My Scripts\Billboard.cs" />
      <Compile Include="Assets\Simple Multiplayer\My Scripts\Bullet.cs" />
      <Compile Include="Assets\Simple Multiplayer\My Scripts\EnemySpawner.cs" />
      <Compile Include="Assets\Simple Multiplayer\My Scripts\Health.cs" />
      <Compile Include="Assets\Simple Multiplayer\My Scripts\PlayerController.cs" />
+     <None Include="Assets\LeapMotion\Resources\RuntimeGizmos.shader" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
@@ -68,6 +157,9 @@
  </Reference>
  <Reference Include="UnityEngine.VR">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityVR/RuntimeEditor/UnityEngine.VR.dll</HintPath>
+ </Reference>
+ <Reference Include="LeapCSharp.NET3.5">
+ <HintPath>C:/Users/Rekha/Documents/Multiplayer5.5/Assets/Plugins/LeapCSharp.NET3.5.dll</HintPath>
  </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
