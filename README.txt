@@ -1,0 +1,15 @@
+Steps To Creating Unity Avatar Application To Support Streaming of the Realtime events to Android client from Desktop through WiFi-Hotspot:
+- Build a prototype unity application
+- Imported Avatar FBX to unity application
+- Added Network components to the unity application like NetworkManger and NetworkManagerHUD.
+- Tested the Networked elements over client-server setup locally on desktop
+- Create a GIT repository and Push the code base to GIT.
+- Create a Unity ID in https://developer.cloud.unity3d.com
+- Create a new Unity Project on cloud and and import the the porject from GIT to Unity3d cloud
+- Go to Cloud build and Select Android build as the default build	
+- If its a collaboration project, add users and manage groups.
+- Once the cloud build is ready, it will mail the Android apk link to all the users through email.
+- Install the Android apk. Turn on the Mobile hotspot.
+- Let the desktop connect to the mobile hotspot and start the unity application as a Host on desktop.
+- From android application, connect to the desktop unity host, by entering the desktop IP address on the NetworkManagerHUD console.
+- Desktop based Unity application starts streaming realtime events to Android based unity application.
